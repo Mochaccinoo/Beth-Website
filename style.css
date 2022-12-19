@@ -6,9 +6,9 @@
   font-style: normal;
 }
 :root {
-  --main: #D6CFCB;
-  --shadow: #A6808C;
-  --highlight: #565264;
+  --main: #EDF2F4;
+  --pop: #787878;
+  --dark: #0f0f08;
 }
 html, body {
   height: 100%;
@@ -68,7 +68,7 @@ h1, h2 {
 .filter__link {
   position: relative;
   display: block;
-  color: var(--shadow);
+  color: var(--pop);
   text-decoration: none;
   padding: 0 1.5vw;
   font-size: 1.15vw;
@@ -92,7 +92,7 @@ h1, h2 {
   font-size: 1.15vw;
   transform: translate3d(100%, 0, 0);
   transition: transform 0.75s ease;
-  color: var(--highlight);
+  color: var(--dark);
 }
 .filter__link:hover .filter__link-mask span, .filter__link.is-active .filter__link-mask span {
   transform: translate3d(0, 0, 0);
@@ -128,13 +128,13 @@ h1, h2 {
 .slide__sub-title { /*smol title*/
   position: absolute;
   bottom: 15%;
-  color: var(--shadow);
+  color: var(--pop);
   font-size: 1.35vw;
 }
 .slide__title { /*big title*/
   position: absolute;
   bottom: -10%;
-  color: var(--highlight);
+  color: var(--dark);
   font-size: 4vw;
   z-index: 2;
   overflow: hidden;
@@ -168,7 +168,7 @@ img {
   left: 20%;
   right: 20%;
   height: 1px;
-  background-color: var(--shadow);
+  background-color: var(--pop);
 }
 .scrollbar__handle {
   position: absolute;
@@ -178,7 +178,7 @@ img {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left;
-  background-color: var(--highlight);
+  background-color: var(--dark);
 }
 
 .resize {
@@ -196,12 +196,12 @@ img {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: var(--highlight);
+  color: var(--dark);
   text-align: center;
   text-decoration: none;
 }
 .resize span {
-  color: var(--shadow);
+  color: var(--pop);
 }
 @media (max-width: 800px) {
   .resize {
